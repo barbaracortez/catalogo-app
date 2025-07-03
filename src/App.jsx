@@ -21,6 +21,9 @@ const handleRemoveFromCart = (indexToRemove) => {
   const updatedCart = cart.filter((_, index) => index !== indexToRemove);
   setCart(updatedCart);
 };
+const getTotal = () => {
+  return cart.reduce((acc, item) => acc + item.price, 0);
+};
 
 
   return (
@@ -41,7 +44,7 @@ const handleRemoveFromCart = (indexToRemove) => {
         ))}
         </div>
 
-      <Cart cart={cart}  onRemove={handleRemoveFromCart}/>
+      <Cart cart={cart}  onRemove={handleRemoveFromCart} total={getTotal()}/>
       </div>
     </div>
   );
