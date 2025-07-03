@@ -1,0 +1,29 @@
+.cart {
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    min-width: 250px;
+}
+
+.cart-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.cart-empty {
+    color:#6b7280;
+    font-style: italic;
+}
+
+.cart-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cart-item {
+    padding: 4px 0;
+    border-bottom:1px solid #e5e7eb;
+    font-size: 15px;
+}
