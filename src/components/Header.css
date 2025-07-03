@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 32px;
+    color: #1f2937;
+}
+
+.cart-count {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: bold;
+}
