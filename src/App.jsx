@@ -17,6 +17,10 @@ function App() {
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+  const handleRemoveFromCart = (indexToRemove) => {
+    const updatedCart = cart.filter((_, index) => index !== indexToRemove);
+    setCart(updatedCart);
+  };
 
   return (
     <div className="app">
@@ -37,7 +41,7 @@ function App() {
           ))}
         </div>
 
-        <Cart cart={cart} />
+        <Cart cart={cart}  onRemove={handleRemoveFromCart}/>
       </div>
     </div>
   );

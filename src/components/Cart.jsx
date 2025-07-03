@@ -1,6 +1,6 @@
 import "./Cart.css";
 
-function Cart({ cart }) {
+function Cart({ cart, onRemove }) {
   return (
     <div className="cart">
       <h2 className="cart-title">Carrito</h2>
@@ -10,7 +10,12 @@ function Cart({ cart }) {
         <ul className="cart-list">
           {cart.map((item, index) => (
             <li key={index} className="cart-item">
-              {item.name} - ${item.price}
+              <span>
+                {item.name} - ${item.price}
+              </span>
+              <button className="remove-btn" onClick={() => onRemove(index)}>
+                ❌
+              </button>
             </li>
           ))}
         </ul>
