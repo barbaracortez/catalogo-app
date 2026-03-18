@@ -2,7 +2,7 @@
     background-color: white;
     border-radius: 12px;
     padding: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(43, 42, 42, 0.741);
     transition: transform 0.2s ease;
 }
 
@@ -21,8 +21,9 @@
 .product-name {
     font-size: 18px;
     font-weight: 600;
-    color: #111827;
+    color: #272311;
     margin-bottom: 4px;
+    
 }
 
 .product-price {
@@ -43,4 +44,13 @@
 
 .add-button:hover {
     background-color: #1e40af;
+}
+
+.product-card a {
+  text-decoration: none; 
+  color: inherit;        
+}
+
+.product-card a:hover {
+  text-decoration: underline; 
 }
